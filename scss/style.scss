@@ -1,0 +1,98 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.todo_list {
+    .container {
+        max-width: 1200px;
+        margin: 0 auto;
+        .todo_list_content {
+            .todo_list_header {
+                h1 {
+                    font-size: 48px;
+                    line-height: 59px;
+                    text-align: center;
+                    outline: none;
+                    margin-bottom: 22px;
+                    margin-top: 70px;
+                }
+
+                form {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    gap: 10px;
+                    input {
+                        border: 2px solid #007FFF;
+                        border-radius: 10px;
+                        width: 321px;
+                        height: 42px;
+                        background: #fff;
+                        padding-left: 10px;
+                        outline: none;
+                        color: black;
+                    }
+
+                    button {
+                        width: 155px;
+                        height: 42px;
+                        background: #0071E3;
+                        border-radius: 10px;
+                        border: 0;
+                        color: white;
+                    }
+                }
+            }
+
+            .line {
+                border: 1px solid rgba(0, 0, 0, 0.25);
+                height: 0;
+                width: 100%;
+                margin-top: 42px;
+                margin-bottom: 20px;
+            }
+
+            .todo_list_flex_box {
+                display: flex;
+                align-items: center;
+                flex-wrap: wrap;
+                gap: 20px;
+                .todo_list_item {
+                    background: #F0F0F0;
+                    border: 1px solid #007FFF;
+                    border-radius: 10px;
+                    width: 282px;
+                    height: 90px;
+                    padding: 19px;
+                    display: flex;
+                    align-items: flex-start;
+                    justify-content: space-between;
+                    .todo_list_elem_one {
+                        h2 {
+                            font-size: 18px;
+                            line-height: 22px;
+                            margin-bottom: 9px;
+                        }
+
+                        span {
+                            font-size: 14px;
+                            line-height: 17px;
+                            color: rgba(0, 0, 0, 0.55);
+                        }
+
+                        
+                    }
+                    .todo_list_elem_two { 
+                        img {
+                            width: 20px;
+                            height: 20px;
+                            cursor: pointer;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
